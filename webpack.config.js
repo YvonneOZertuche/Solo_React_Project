@@ -1,12 +1,12 @@
 const path = require("path")
 
 module.exports = {
-  target: "web",
+  
   entry: "./app/Main.js",
   output: {
     publicPath: "/",
     path: path.resolve(__dirname, "app"),
-    filename: "bundle.js"
+    filename: "bundled.js"
   },
 
   mode: "development",
