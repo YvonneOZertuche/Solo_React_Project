@@ -32,18 +32,18 @@ body {
 }
 
 .avatar-small {
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
   margin-right: 5px;
   position: relative;
   top: -3px;
 }
 
 .avatar-tiny {
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
   margin-right: 4px;
   position: relative;
   top: -1px;
@@ -505,7 +505,7 @@ textarea.tall-textarea {
 .small-header-avatar {
   width: 32px;
   height: 32px;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .custom-tooltip {

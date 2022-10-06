@@ -22,7 +22,7 @@ const HeaderLoggedIn = (props) => {
       </span>
       <Link to={`/profile/${appState.user.username}`} className="mr-2">
         <img
-          className="tiny-header-avatar rounded=true"
+          className="tiny-avatar"
           src={appState.user.avatar} />
       </Link>
       <Link className="btn btn-large btn-success mr-2" to="/create-post">

@@ -10,7 +10,7 @@ const Profile = () => {
   const appState = useContext(StateContext)
   const [profileData, setProfileData] = useState({
     profileUsername: "...",
-    profileAvatar: 'https://gravatar.com/avatar/placeholder?s=128',
+    profileAvatar: 'https://gravatar.com/avatar/placeholder?s=100',
     isFollowing: false,
     counts: {postCount: "", followerCount: "", followingCount: ""}})
 

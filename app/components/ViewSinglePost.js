@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
-import {useParams , Link} from 'react-router-dom'
+import { useParams, Link } from "react-router-dom"
 import Page from "./Page"
-import Axios from 'axios'
+import Axios from "axios"
+import LoadingDotsIcon from "./LoadingDotsIcon"
 
 const ViewSinglePost = () => {
-  const {id} = useParams()
+  const { id } = useParams()
   const [isLoading, setIsLoading] = useState(true)
   const [post, setPost] = useState()
 
@@ -19,19 +20,22 @@ const ViewSinglePost = () => {
       }
     }
     fetchPost()
+    return () => {
+      
+    }
   }, [])
 
-  if(isLoading)
-   return (
-    <Page title = "...">
-      <div>Loading...</div>
-    </Page>
-   )
+  if (isLoading)
+    return (
+      <Page title="...">
+        <LoadingDotsIcon />
+      </Page>
+    )
 
-    const date = new Date(post.createdDate)
-    const dateFormatted = `${
-      date.getMonth() + 1
-    }/${date.getDate()}/${date.getFullYear()}`
+  const date = new Date(post.createdDate)
+  const dateFormatted = `${
+    date.getMonth() + 1
+  }/${date.getDate()}/${date.getFullYear()}`
 
   return (
     <Page title={post.title}>
@@ -50,8 +54,13 @@ const ViewSinglePost = () => {
       <p className="text-muted small mb-4">
         <Link to={`/profile/${post.author.username}`}>
           <img className="avatar-tiny" src={post.author.avatar} />
-        </Link>{"  "}
-        Posted by <Link to={`/profile/${post.author.username}`}>{post.author.username}</Link> on {dateFormatted}
+        </Link>
+        {"  "}
+        Posted by{" "}
+        <Link to={`/profile/${post.author.username}`}>
+          {post.author.username}
+        </Link>{" "}
+        on {dateFormatted}
       </p>
       <div className="body-content">{post.body}</div>
     </Page>
