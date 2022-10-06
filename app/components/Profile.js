@@ -19,7 +19,7 @@ const Profile = () => {
         try {
           const response = await Axios.post(`/profile/${username}`, {token: appState.user.token})
           setProfileData(response.data)
-          console.log(response.data)
+          
           
         } catch (error) {
           console.log("There was a problem")
