@@ -1,7 +1,17 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Page from "./Page"
 
 const ViewSinglePost = () => {
+  const [isLoading, setIsLoading] = useState(true)
+  const [post, setPost] = useState()
+
+  if(isLoading)
+   return (
+    <Page title = "...">
+      <div>Loading...</div>
+    </Page>
+   )
+     
   return (
     <Page title="Fake Hardcoded Title">
       <div className="d-flex justify-content-between">
