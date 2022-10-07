@@ -431,7 +431,7 @@ textarea.tall-textarea {
   font-size: 0.75rem;
 }
 
-.floating-alert {
+.floating-alerts {
   display: none;
   position: absolute;
   z-index: 999;
