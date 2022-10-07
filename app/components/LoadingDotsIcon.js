@@ -1,6 +1,6 @@
 import React from "react"
 
-const LoadingDotsIcon = () => {
+function LoadingDotsIcon() {
   return (
     <div className="dots-loading">
       <div></div>

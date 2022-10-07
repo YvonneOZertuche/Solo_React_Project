@@ -19,7 +19,7 @@ import Terms from "./components/Terms"
 
 import CreatePost from "./components/CreatePost"
 import ViewSinglePost from "./components/ViewSinglePost"
-import FlashMessage from "./components/FlashMessage"
+import FlashMessages from "./components/FlashMessages"
 import Profile from './components/Profile'
 
 function Main() {
@@ -69,7 +69,7 @@ function Main() {
     <StateContext.Provider value={state}>
       <DispatchContext.Provider value={dispatch}>
         <BrowserRouter>
-          <FlashMessage messages={state.flashMessages} />
+          <FlashMessages messages={state.flashMessages} />
           <Header />
           <Routes>
             <Route path="/" element={state.loggedIn ? <Home /> : <HomeGuest />}/>
