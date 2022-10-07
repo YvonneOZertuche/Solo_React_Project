@@ -13,13 +13,13 @@ const HeaderLoggedIn = (props) => {
   }
   return (
     <div className="flex-row my-3 my-md-0">
-      <a href="#" className="text-white mr-2 header-search-icon">
+      {/* <a href="#" className="text-white mr-2 header-search-icon">
         <i className="fas fa-search"></i>
       </a>
       <span className="mr-2 header-chat-icon text-white">
         <i className="fas fa-comment"></i>
         <span className="chat-count-badge text-white"> </span>
-      </span>
+      </span> */}
       <Link to={`/profile/${appState.user.username}`} className="mr-2">
         <img
           className="tiny-avatar"

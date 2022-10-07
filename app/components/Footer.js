@@ -23,7 +23,7 @@ const Footer = () => {
           Copyright &copy; {new Date().getFullYear()}
           <br />
           <Link href="/" className="text-muted">
-            MyBrokenApp
+            Let's Talk
           </Link>
           . All rights reserved.
         </p>
