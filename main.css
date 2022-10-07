@@ -32,9 +32,9 @@ body {
 }
 
 .avatar-small {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
   margin-right: 5px;
   position: relative;
   top: -3px;
@@ -431,7 +431,7 @@ textarea.tall-textarea {
   font-size: 0.75rem;
 }
 
-.floating-alerts {
+.floating-alert {
   display: none;
   position: absolute;
   z-index: 999;
@@ -446,7 +446,7 @@ textarea.tall-textarea {
   animation-fill-mode: forwards;
 }
 
-.floating-alerts .floating-alert:last-of-type {
+.floating-alert .floating-alert:last-of-type {
   display: block;
 }
 
